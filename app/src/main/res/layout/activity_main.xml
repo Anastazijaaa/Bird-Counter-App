@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/constraintLayout"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:id="@+id/counter"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="328dp"
+        android:text="0"
+        android:textSize="70sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+    >
+
+    <Button
+        android:id="@+id/blueBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Blue Bird"
+        android:textSize="15dp"
+        android:backgroundTint="@color/blue"
+        android:onClick="blueClickHandler"
+        app:layout_constraintTop_toBottomOf="@+id/counter"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="525dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/yellowBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Yellow Bird"
+        android:textSize="15dp"
+        android:onClick="yellowClickHandler"
+        android:backgroundTint="@color/yellow"
+        app:layout_constraintLeft_toRightOf="@+id/counter"
+        tools:layout_editor_absoluteY="350dp"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/roseBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Rose Bird"
+        android:textSize="15dp"
+        android:backgroundTint="@color/rose"
+        tools:layout_editor_absoluteX="148dp"
+        tools:layout_editor_absoluteY="182dp"
+        android:onClick="roseClickHandler"
+        app:layout_constraintBottom_toTopOf="@+id/counter"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/greenBird"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:text="Green Bird"
+        android:textSize="15dp"
+        android:onClick="greenClickHandler"
+        android:backgroundTint="@color/green"
+        tools:layout_editor_absoluteX="-3dp"
+        tools:layout_editor_absoluteY="350dp"
+        app:layout_constraintRight_toLeftOf="@id/counter"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/resetBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:text="Reset"
+        android:backgroundTint="@color/black"
+        android:textSize="25dp"
+        android:textColor="@color/green"
+        android:onClick="resetClickHandler"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:ignore="MissingConstraints" />
+</androidx.constraintlayout.widget.ConstraintLayout>
